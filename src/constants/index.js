@@ -172,26 +172,26 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "I thought it was impossible to make a website as beautifu for rookie as this site, but Peter proved me wrong.",
+    name: "Veronika Vaneva ",
+    designation: "Product Owner ",
+    company: "Amusnet Interactive",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "I've never met a web developer who truly cares about their clients and commits' success like Peter does.",
+    name: "Stoyan Shopov ",
+    designation: "Microsoft Certified Traine",
+    company: "Grand Games",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "After Peter optimized our website, our traffic increased by 20%. We can't thank them enough!",
+    name: "Kristiyana Ivanova",
+    designation: "Technical Trainer at Software University",
+    company: "Soft-Uni",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
