@@ -17,9 +17,57 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {};
 
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    //S0hPVvBqyn2o3UByJ
+    //template_9bb75tu
+    //service_w75ugjp
+
+    emailjs
+      .send(
+        "service_w75ugjp",
+        "template_9bb75tu",
+        {
+          from_name: form.name,
+          to_name: "Peter",
+          from_email: "form.email",
+          to_email: "pmatov@gmail.com",
+          message: form.message,
+        },
+        "S0hPVvBqyn2o3UByJ"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
+  };
 
   return (
     <div
